@@ -1,13 +1,116 @@
 body {
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+.App {
+  overflow: hidden;
+}
+
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+h3 {
+  text-transform: uppercase;
+}
+
+h4 {
+  text-transform: capitalize;
+  margin: 0;
+}
+
+.active {
+  border-bottom: 2px solid #ff8e53;
+}
+
+a:hover {
+  border-bottom: 2px solid #ff8e53;
+  cursor: pointer;
+}
+
+#nav {
+  width: 100%;
+  background-color: #0f0c29;
+  z-index: 2;
+}
+
+.hero {
+  background: url("./image/bg3.jpg"), rgba(0, 0, 0, 0.5);
+  background-blend-mode: darken;
+  overflow: hidden;
+}
+
+#about {
+  background: #0f2746;
+  padding: 1rem;
+}
+
+.gradient {
+  background: -webkit-linear-gradient(45deg, #fe6b8b, #ff8e53);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#market,
+.market {
+  background: linear-gradient(45deg, #0f0c29, #1f3d5c);
+  padding: 1rem;
+}
+
+#discover,
+.discover {
+  background: linear-gradient(45deg, #0f2746, #1f3d5c);
+  padding: 1rem;
+}
+
+.news-img {
+  width: 100%;
+  object-fit: contain !important;
+  background-color: #0f0c29;
+}
+
+a {
+  text-decoration: none;
+}
+
+.hover-effect {
+  transition: 0.5s;
+}
+.hover-effect:hover {
+  transform: scale(1.05);
+}
+
+#contact {
+  padding: 1rem;
+  background-image: url("./image/bg2.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: darken;
+}
+
+.contact-link {
+  text-decoration: none;
+  color: white;
+  display: block;
+  margin-bottom: 1rem;
+  transition: 0.5s;
+}
+
+.contact-link:hover {
+  background: -webkit-linear-gradient(45deg, #fe6b8b, #ff8e53);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#contact p {
+  color: white;
 }
