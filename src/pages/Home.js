@@ -30,7 +30,7 @@ const Home = () => {
                 <ButtonEnd>
                   <LinkR to="/market"> 
               <div  data-aos-duration="1000" data-aos="fade-up">
-                    <Button className={classes.root} variant='contained'>See More <AiOutlineArrowRight /></Button>
+                    <Button className={[classes.root, "hover-ani"]} variant='contained'>See More <AiOutlineArrowRight className="ani" /></Button>
                     </div>
                 </LinkR>
                 </ButtonEnd>
@@ -40,7 +40,7 @@ const Home = () => {
            <ButtonEnd >
               <div  data-aos-duration="1000" data-aos="fade-up">
              <LinkR to="/discover" style={{marginRight: "2rem"}}> 
-              <Button className={classes.root} variant='contained' >See More <AiOutlineArrowRight /></Button>
+              <Button className={[classes.root, "hover-ani"]} variant='contained' >See More <AiOutlineArrowRight className="ani" /></Button>
            </LinkR>
            </div>
            </ButtonEnd>

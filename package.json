@@ -16,6 +16,7 @@
     "apexcharts": "^3.33.2",
     "axios": "^0.26.1",
     "chart.js": "^3.7.1",
+    "framer-motion": "^6.2.8",
     "html-react-parser": "^1.4.9",
     "millify": "^4.0.0",
     "moment": "^2.29.1",

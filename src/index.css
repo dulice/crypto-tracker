@@ -31,7 +31,7 @@ h4 {
   border-bottom: 2px solid #ff8e53;
 }
 
-a:hover {
+#nav a:hover {
   border-bottom: 2px solid #ff8e53;
   cursor: pointer;
 }
@@ -46,6 +46,10 @@ a:hover {
   background: url("./image/bg3.jpg"), rgba(0, 0, 0, 0.5);
   background-blend-mode: darken;
   overflow: hidden;
+}
+
+.hero-img {
+  font-size: 10rem;
 }
 
 #about {
@@ -113,4 +117,13 @@ a {
 
 #contact p {
   color: white;
+}
+
+.ani {
+  transform: scale(0);
+  margin-left: 0.5rem;
+  transition: 0.5s;
+}
+.hover-ani:hover .ani {
+  transform: scale(1);
 }

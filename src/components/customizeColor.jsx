@@ -19,7 +19,7 @@ export  const useStyles = makeStyles({
       background: 'linear-gradient(45deg, #fe6b8b, #ff8e53)',
       border: 0,
       borderRadius: 15,
-      color: 'white',
+      color: 'white !important',
       padding: '5px 15px'
     }
   })
@@ -43,7 +43,7 @@ export const Nav = styled.div`
     align-items: center;
     background: #0f2027;
     z-index: 10;
-
+    opacity: .9;
     svg {
       margin-left: 2rem;
         font-size: 2rem;
@@ -54,10 +54,25 @@ export const Nav = styled.div`
         margin-right: 2rem;
         color: bold;
     }
-     &.active, &.hover {
-        background: linear-gradient(45deg, #fe6b8b, #ff8e53);
-        padding: 5px 10px;
-        border-radius: 2rem;
+    .collapse {
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+      top: 60px;
+      right: 0;
+      background: #0f2027;
+      padding: 1rem;
+      width: 50%;
+      border-radius: 10px;
+      opacity: .9;
+      transition: all .5s;
+    }
+    .collapse a {
+      margin: 1rem;
+      width: 50px;
+    }
+    .collapse a:last-child {
+      width: 90px;
     }
 `
 export const CardStyle = styled.div`

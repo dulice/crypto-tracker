@@ -1,9 +1,11 @@
 import React from 'react'
 import {Button, Grid, Typography, Container} from "@mui/material"
 import { ThemeProvider} from '@mui/material/styles';
-import hero from "../image/img.svg"
+import hero from "../image/img1.svg"
+import aboutImg from "../image/img2.svg"
 import { theme, useStyles, Responsive } from "../components/customizeColor"
 import  CountUp from "react-countup"
+import { ImArrowDownRight2 } from "react-icons/im"
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { Link } from 'react-router-dom';
@@ -26,7 +28,7 @@ const About = () => {
                   data-aos-duration="1100"
                 data-aos="fade-right">
                 <Grid item xs={12} md={5} my={5} >
-                <img src={hero} alt="" width="400px"/>
+                <img src={aboutImg} alt="" width="400px"/>
               </Grid>
               </div>
               <Grid item xs={12} md={5} my={5} >
@@ -110,8 +112,10 @@ const About = () => {
                 </Typography>
                 <Link to="/discover">
                   <Button variant="contained"
-                  className={classes.root}
-                >Read More</Button>
+                  className={[classes.root, "hover-ani"]}
+                >Read More
+                < ImArrowDownRight2 className="ani" /> 
+                </Button>
                 </Link>
             </div>
               </Grid>

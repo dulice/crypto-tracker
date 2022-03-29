@@ -7,6 +7,7 @@ import TextField from '@mui/material/TextField';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Checkbox from '@mui/material/Checkbox';
 import Link from '@mui/material/Link';
+import {Link as LinkR } from "react-router-dom";
 import Paper from '@mui/material/Paper';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
@@ -98,15 +99,17 @@ export default function SignInSide() {
                 control={<Checkbox value="remember" color="primary" />}
                 label="Remember me"
               />
-              <Button
-                type="submit"
-                fullWidth
-                variant="contained" 
-                sx={{ mt: 3, mb: 2 }}
-                className={classes.root}
-              >
-                Sign In
-              </Button>
+              <LinkR to="/">  
+                <Button
+                  type="submit"
+                  fullWidth
+                  variant="contained" 
+                  sx={{ mt: 3, mb: 2 }}
+                  className={classes.root}
+                >
+                  Sign In
+                </Button>
+              </LinkR>
               <Grid container>
                 <Grid item xs>
                   <Link href="#" variant="body2">
