@@ -29,7 +29,7 @@ const CryptoDetails = () => {
            }
        </JustyBetween>
 
-       <Chart history={history} />
+//        <Chart history={history} />
 
        <Grid container spacing={3}>
 
